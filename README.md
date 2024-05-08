@@ -4,6 +4,10 @@
 
 Find songs, artists and lyrics using the [lyrics.ovh](https://lyrics.ovh) API
 
+- UI view
+
+![view](./ui.png)
+
 ## Project Specifications
 
 - Display UI with song/artist input
