@@ -1,13 +1,19 @@
 import React from "react";
 import SingleSong from "./SingleSong";
 
-const Results = ({ songs }) => {
+const Results = ({ songs, getLyricsText }) => {
   return (
     <>
       <div className="wrapper">
         <ul className="songs">
           {songs.map((song) => {
-            return <SingleSong key={song.id} song={song} />;
+            return (
+              <SingleSong
+                key={song.id}
+                getLyricsText={getLyricsText}
+                song={song}
+              />
+            );
           })}
         </ul>
       </div>
